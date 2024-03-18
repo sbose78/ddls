@@ -84,7 +84,7 @@ jobs:
           # Password to use to connect to the database
           # string
           # Optional
-          password: $SNOWFLAKE_PASSWORD
+          password: ${{ secrets.GITHUB_TOKEN }}
       
           # [PRO] Enable or disable reporting.
           # bool
