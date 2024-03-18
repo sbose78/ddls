@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Execute SQL on Snowflake
 
 # Controls when the workflow will run
 on:
@@ -39,7 +39,7 @@ jobs:
           # The JDBC database connection URL
           # string
           # Required
-          url: "jdbc:snowflake://bg45124.ca-central-1.aws.snowflakecomputing.com/?db=liquibase_test&schema=test"
+          url: "jdbc:snowflake://bg45124.ca-central-1.aws.snowflakecomputing.com/?db=infra&schema=liquibase"
       
           # Fully-qualified class which specifies a ChangeExecListener
           # string
